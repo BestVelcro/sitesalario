@@ -1,93 +1,146 @@
 <!DOCTYPE html>
 <html lang=pt-br dir="ltr">
-
 <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
-        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
     <script src="salario.js"></script>
-</head>
+  </head>
 
-<body>
+  <body>
     <nav class="navbar navbar-expand-lg navbar navbar-dark bg-success">
-        <a class="navbar-brand" href="index.html">Empresa Maneira</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+      <a class="navbar-brand" href="index.html">Empresa Maneira</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="empresa.html">Empresa</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="salario.html">Salário</a>
-                </li>
-
-            </ul>
-        </div>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html"
+              >Home <span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="empresa.html">Empresa</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="salario.html">Salário</a>
+          </li>
+        </ul>
+      </div>
     </nav>
-<br>
-<center>
-	<h2>Calcule o seu salário aqui!</h2>
-    <div class="input-group mt-5 w-50 p-3 ml-5">
+    <br />
+    <center>
+      <h2>Calcule o seu salário aqui!</h2>
+      <div class="input-group mt-5 w-50 p-3 ml-5">
         <div class="input-group-prepend">
-            <span class="input-group-text" id="inputGroup-sizing-default">Nome</span>
+          <span class="input-group-text" id="inputGroup-sizing-default"
+            >Nome</span
+          >
         </div>
-        <input type="text" class="form-control" aria-label="Sizing example input"
-            aria-describedby="inputGroup-sizing-default" id="nome">
-    </div>
+        <input
+          type="text"
+          class="form-control"
+          aria-label="Sizing example input"
+          aria-describedby="inputGroup-sizing-default"
+          id="nome"
+        />
+      </div>
 
-    <div class="input-group mt-2 w-50 p-3 ml-5">
+      <div class="input-group mt-2 w-50 p-3 ml-5">
         <div class="input-group-prepend">
-            <span class="input-group-text">Valor de Horas Trabalhadas</span>
+          <span class="input-group-text">Valor de Horas Trabalhadas</span>
         </div>
-        <input type="text" class="form-control" aria-label="Sizing example input"
-            aria-describedby="inputGroup-sizing-default" id="vhora">
-    </div>
+        <input
+          type="text"
+          class="form-control"
+          aria-label="Sizing example input"
+          aria-describedby="inputGroup-sizing-default"
+          id="vhora"
+        />
+      </div>
 
-    <div class="input-group mt-2 w-50 p-3 ml-5">
+      <div class="input-group mt-2 w-50 p-3 ml-5">
         <div class="input-group-prepend">
-            <span class="input-group-text">Quantidade de Horas trabalhadas</span>
+          <span class="input-group-text">Quantidade de Horas trabalhadas</span>
         </div>
-        <input type="text" class="form-control" aria-label="Sizing example input"
-            aria-describedby="inputGroup-sizing-default" id="qhora">
-    </div>
+        <input
+          type="text"
+          class="form-control"
+          aria-label="Sizing example input"
+          aria-describedby="inputGroup-sizing-default"
+          id="qhora"
+        />
+      </div>
 
-    <div class="input-group mt-2 w-50 p-3 ml-5">
+      <div class="input-group mt-2 w-50 p-3 ml-5">
         <div class="input-group-prepend">
-            <span class="input-group-text">Imposto de Renda</span>
+          <span class="input-group-text">Imposto de Renda</span>
         </div>
-        <input type="text" class="form-control" aria-label="Sizing example input"
-            aria-describedby="inputGroup-sizing-default" id="imposto" disabled>
-    </div>
+        <input
+          type="text"
+          class="form-control"
+          aria-label="Sizing example input"
+          aria-describedby="inputGroup-sizing-default"
+          id="imposto"
+          disabled
+        />
+      </div>
 
-    <div class="input-group mt-2 w-50 p-3 ml-5">
+      <div class="input-group mt-2 w-50 p-3 ml-5">
         <div class="input-group-prepend">
-            <span class="input-group-text">Salário Bruto</span>
+          <span class="input-group-text">Salário Bruto</span>
         </div>
-        <input type="text" class="form-control" aria-label="Sizing example input"
-            aria-describedby="inputGroup-sizing-default" id="salbruto" disabled>
-    </div>
-	
-    <div class="input-group mt-2 w-50 p-3 ml-5">
+        <input
+          type="text"
+          class="form-control"
+          aria-label="Sizing example input"
+          aria-describedby="inputGroup-sizing-default"
+          id="salbruto"
+          disabled
+        />
+      </div>
+
+      <div class="input-group mt-2 w-50 p-3 ml-5">
         <div class="input-group-prepend">
-            <span class="input-group-text">Salário Líquido</span>
+          <span class="input-group-text">Salário Líquido</span>
         </div>
-        <input type="text" class="form-control" aria-label="Sizing example input"
-            aria-describedby="inputGroup-sizing-default" id="salliquido" disabled>
-    </div>
-	
-        <input type="button" value="Calcular" onclick="calcsalario()">
-        <input type="button" value="Limpar" onclick="apagar()">
+        <input
+          type="text"
+          class="form-control"
+          aria-label="Sizing example input"
+          aria-describedby="inputGroup-sizing-default"
+          id="salliquido"
+          disabled
+        />
+      </div>
 
-
- </center>
-<br>
- </body>
-
+      <input
+        style="border-radius: 5px; width: 300px; padding: 10px; font-size: 20px; background-color:#007BFF; border-color:#007BFF;"
+        type="button"
+        value="Calcular"
+        onclick="calcsalario()"
+      />
+      <input
+        style="border-radius: 5px; width: 300px; padding: 10px; font-size: 20px; background-color:#DC3545; border-color:#DC3545;"
+        type="button"
+        value="Limpar"
+        onclick="apagar()"
+      />
+    </center>
+    <br />
+  </body>
 </html>
